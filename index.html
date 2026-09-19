@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Plataforma de treinamento físico de Jesley Slayter. Treine com método, evolua com consistência.">
+<meta name="theme-color" content="#0E1113">
+<title>Slayter Trainer</title>
+<style>
+  :root{ color-scheme: dark; padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+  body{ margin:0; font: 14px system-ui, sans-serif; background:#0E1113; }
+  img{ max-width:100%; }
+  [hidden]{ display:none !important; }
+</style>
+</head>
+<body>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap">
+<link rel="stylesheet" href="slayter.css">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<g id="i-play"><path d="M5 3l14 9-14 9V3z" fill="currentColor" stroke="none"/></g>
+<g id="i-check"><path d="M20 6L9 17l-5-5"/></g>
+<g id="i-arrow"><path d="M5 12h14M13 6l6 6-6 6"/></g>
+<g id="i-home"><path d="M3 10.5L12 3l9 7.5V21H3z"/><path d="M9.5 21v-6h5v6"/></g>
+<g id="i-dumbbell"><path d="M4 9v6M7 7v10M17 7v10M20 9v6M7 12h10"/></g>
+<g id="i-library"><path d="M4 4h7v16H4zM13 4h7v16h-7z"/><path d="M6.5 9h2M15.5 9h2"/></g>
+<g id="i-chart"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></g>
+<g id="i-users"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5"/><path d="M16 5.2A3.2 3.2 0 0 1 16 11M17.5 14.8c2.2.6 3.5 2.5 3.5 5.2"/></g>
+<g id="i-coin"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5v9M14.6 9.6c-.6-.8-1.6-1.2-2.6-1.2-1.5 0-2.6.8-2.6 2s1.1 1.8 2.6 1.8 2.6.6 2.6 1.8-1.1 2-2.6 2c-1 0-2-.4-2.6-1.2"/></g>
+<g id="i-brain"><path d="M12 5.5a3 3 0 0 0-5.7-1.3A2.8 2.8 0 0 0 4 7a2.9 2.9 0 0 0 .6 1.8A3 3 0 0 0 5 14.6a3 3 0 0 0 2.6 4.2A2.7 2.7 0 0 0 12 19z"/><path d="M12 5.5a3 3 0 0 1 5.7-1.3A2.8 2.8 0 0 1 20 7a2.9 2.9 0 0 1-.6 1.8A3 3 0 0 1 19 14.6a3 3 0 0 1-2.6 4.2A2.7 2.7 0 0 1 12 19z"/><path d="M12 5.5V19"/></g>
+<g id="i-card"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="M2.5 10h19"/></g>
+<g id="i-user"><circle cx="12" cy="8" r="3.4"/><path d="M4.5 20.5c0-3.7 3.4-6.2 7.5-6.2s7.5 2.5 7.5 6.2"/></g>
+<g id="i-bell"><path d="M18 9a6 6 0 1 0-12 0c0 5-2 6.5-2 6.5h16S18 14 18 9z"/><path d="M10.3 19a2 2 0 0 0 3.4 0"/></g>
+<g id="i-search"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></g>
+<g id="i-close"><path d="M6 6l12 12M18 6L6 18"/></g>
+<g id="i-plus"><path d="M12 5v14M5 12h14"/></g>
+<g id="i-heart"><path d="M12 20s-7.5-4.6-7.5-9.5A4.2 4.2 0 0 1 12 7.8a4.2 4.2 0 0 1 7.5 2.7C19.5 15.4 12 20 12 20z"/></g>
+<g id="i-comment"><path d="M20.5 11.5c0 4.1-3.8 7.4-8.5 7.4a10 10 0 0 1-2.6-.34L4.5 20.5l1.3-3.6a7 7 0 0 1-2.3-5.4C3.5 7.4 7.3 4 12 4s8.5 3.4 8.5 7.5z"/></g>
+<g id="i-more"><circle cx="12" cy="5.5" r="1.4" fill="currentColor"/><circle cx="12" cy="12" r="1.4" fill="currentColor"/><circle cx="12" cy="18.5" r="1.4" fill="currentColor"/></g>
+<g id="i-shield"><path d="M12 3l7.5 3v6c0 4.4-3 8-7.5 9.5C7.5 20 4.5 16.4 4.5 12V6z"/><path d="M9 12l2.2 2.2L15.5 10"/></g>
+<g id="i-clock"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5.2l3.3 2"/></g>
+<g id="i-flame"><path d="M12 3s5 4.2 5 8.6A5 5 0 0 1 7 12c0-1.4.5-2.6 1.3-3.6 0 0 .4 1.9 1.8 2.4C9.6 8.2 12 6.2 12 3z"/></g>
+<g id="i-trophy"><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 5.5H4.5V7A3 3 0 0 0 7 10M17 5.5h2.5V7a3 3 0 0 1-2.5 3"/><path d="M12 14v3.5M8.5 20.5h7"/></g>
+<g id="i-edit"><path d="M15.5 4.5l4 4L8 20H4v-4z"/></g>
+<g id="i-trash"><path d="M4.5 6.5h15M9 6.5V4.2h6v2.3M6.5 6.5l1 13.5h9l1-13.5"/></g>
+<g id="i-info"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5.5M12 7.8v.6"/></g>
+<g id="i-alert"><path d="M12 3.5L21.5 20h-19z"/><path d="M12 9.5v4.5M12 17v.6"/></g>
+<g id="i-chev"><path d="M9 5l7 7-7 7"/></g>
+<g id="i-send"><path d="M21 3L10.5 14M21 3l-6.8 18-3.7-7.6L3 9.8z"/></g>
+<g id="i-target"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="12" cy="12" r=".8" fill="currentColor"/></g>
+<g id="i-pix"><path d="M12 3.2l3.6 3.6M12 20.8l3.6-3.6M12 3.2L8.4 6.8M12 20.8l-3.6-3.6"/><path d="M6.2 9L3.4 11.8a1 1 0 0 0 0 1.4L6.2 16M17.8 9l2.8 2.8a1 1 0 0 1 0 1.4L17.8 16"/><path d="M8.4 6.8h-1a2 2 0 0 0-1.4.6M8.4 17.2h-1a2 2 0 0 1-1.4-.6M15.6 6.8h1a2 2 0 0 1 1.4.6M15.6 17.2h1a2 2 0 0 0 1.4-.6"/></g>
+<g id="i-lock"><rect x="5" y="10.5" width="14" height="10" rx="1.8"/><path d="M8 10.5V7.8a4 4 0 0 1 8 0v2.7"/></g>
+<g id="i-logout"><path d="M14 5.5H6.5v13H14"/><path d="M17.5 12H10M14.5 8.8l3.2 3.2-3.2 3.2"/></g>
+<g id="i-flag"><path d="M5.5 21V4h12l-2.5 4 2.5 4h-12"/></g>
+<g id="i-ban"><circle cx="12" cy="12" r="8.5"/><path d="M6 6l12 12"/></g>
+<g id="i-bolt"><path d="M13 3L5 13.5h6L10.5 21l8-10.5h-6z"/></g>
+<g id="i-camera"><path d="M3.5 7.5h3.2l1.4-2.2h7.8l1.4 2.2h3.2v12H3.5z"/><circle cx="12" cy="13" r="3.6"/></g>
+<g id="i-eye"><path d="M2.5 12S6 6.5 12 6.5 21.5 12 21.5 12 18 17.5 12 17.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="2.8"/></g>
+<g id="i-grid"><rect x="3.5" y="3.5" width="7" height="7"/><rect x="13.5" y="3.5" width="7" height="7"/><rect x="3.5" y="13.5" width="7" height="7"/><rect x="13.5" y="13.5" width="7" height="7"/></g>
+</defs></svg>
+
+<!-- ══════════════ SITE PÚBLICO ══════════════ -->
+<div id="site">
+
+  <header class="topbar">
+    <div class="wrap topbar-in">
+      <a href="#" class="wordmark" data-go="top"><span class="slash" aria-hidden="true"></span>Slayter<i>Trainer</i></a>
+      <nav class="topnav">
+        <a href="#metodo">O Método</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#plataforma">A Plataforma</a>
+        <a href="#planos">Planos</a>
+      </nav>
+      <div class="topacts">
+        <button class="textlink" data-act="entrar">Entrar</button>
+        <button class="btn btn-primary btn-sm" data-act="comecar"><span class="only-wide">Começar agora</span><span class="only-narrow">Começar</span></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap hero-in">
+      <div class="hero-copy">
+        <div class="eyebrow rise">Metodologia Jesley Slayter</div>
+        <h1 class="d1 rise dly1">Slayter<br>Trainer</h1>
+        <p class="hero-sub rise dly2">
+          Treine com método.<br>
+          <em>Evolua com consistência.</em><br>
+          Transforme seus resultados.
+        </p>
+        <div class="hero-cta rise dly3">
+          <button class="btn btn-primary btn-lg" data-act="comecar">Começar agora <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-arrow"/></svg></button>
+          <button class="textlink" data-go="planos">Conhecer os planos</button>
+        </div>
+      </div>
+      <div class="rise dly2">
+        <figure class="photo tall" id="heroPhoto">
+          <img src="img/hero.jpg" alt="Jesley Slayter na academia" width="880" height="1100">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEMA -->
+  <section class="sec problema">
+    <div class="wrap problema-in">
+      <div>
+        <p class="statement">Você não precisa de<br>mais um treino.</p>
+        <p class="statement soft">Precisa saber <b>o que fazer</b>,<br><b>como fazer</b> e <b>como evoluir</b>.</p>
+        <p class="lead" style="margin-top:28px">A maioria das pessoas não para de treinar por falta de vontade. Para por falta de direção: treino sem critério, execução sem correção e nenhuma forma de enxergar o próprio progresso.</p>
+      </div>
+      <figure class="photo" style="aspect-ratio:1140/855">
+        <img src="img/problema.jpg" alt="Jesley Slayter durante o treino" width="1140" height="855">
+      </figure>
+    </div>
+  </section>
+
+  <!-- MÉTODO -->
+  <section class="sec sec-line" id="metodo">
+    <div class="wrap">
+      <div class="sec-intro">
+        <div class="eyebrow">A filosofia de treinamento</div>
+        <h2 class="d2">O Método Slayter</h2>
+        <p class="lead">Mais do que simplesmente treinar, o Método Slayter busca ensinar você a treinar melhor. Técnica, consistência, evolução e respeito ao seu processo fazem parte da metodologia.</p>
+      </div>
+
+      <div class="flow">
+        <div class="flownode"><b>Treino</b><span>A sessão certa para o seu nível, organizada dentro de uma divisão semanal.</span></div>
+        <div class="flowarrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-arrow"/></svg></div>
+        <div class="flownode"><b>Técnica</b><span>Execução, amplitude e cadência corrigidas antes de qualquer aumento de carga.</span></div>
+        <div class="flowarrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-arrow"/></svg></div>
+        <div class="flownode"><b>Consistência</b><span>Semana após semana, com registro do que foi feito e do que ficou para trás.</span></div>
+        <div class="flowarrow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-arrow"/></svg></div>
+        <div class="flownode last"><b>Evolução</b><span>Carga, volume e desempenho documentados — progresso que você consegue ver.</span></div>
+      </div>
+
+      <div class="pillars" id="methodGrid"></div>
+    </div>
+  </section>
+
+  <section class="quoteband">
+    <div class="wrap">
+      <div class="bandsplit">
+        <figure class="bandphoto">
+          <img src="img/firmeza.jpg" alt="Jesley Slayter carregando anilhas de 20 kg" width="1280" height="720">
+        </figure>
+        <div class="bandtext">
+          <p class="quotebig">Firmeza com os processos e <b>gentileza com as pessoas.</b></p>
+          <div class="quote-by">Jesley Slayter — criador do método</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTADOS -->
+  <section class="sec" id="resultados">
+    <div class="wrap">
+      <div class="sec-intro">
+        <div class="eyebrow">Quem treina pelo método</div>
+        <h2 class="d2">Resultados reais de alunos</h2>
+        <p class="lead">Cada caso é publicado com autorização por escrito do aluno, tempo de acompanhamento declarado e evolução documentada a partir dos registros da própria plataforma.</p>
+      </div>
+      <div class="cases" id="casesGrid"></div>
+      <div class="notice info mt-l">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-info"/></svg>
+        <div>Nenhum caso é publicado sem autorização de uso de imagem e relato do próprio aluno. Resultados individuais variam conforme constância, saúde, sono, alimentação e histórico de treino — a plataforma não promete transformação garantida.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- O QUE VOCÊ RECEBE -->
+  <section class="sec sec-line" id="plataforma">
+    <div class="wrap">
+      <div class="sec-intro">
+        <div class="eyebrow">Dentro da plataforma</div>
+        <h2 class="d2">O que você recebe</h2>
+        <p class="lead">Não é uma ficha de treino em PDF. É um ambiente onde o treino acontece, fica registrado e ganha continuidade.</p>
+      </div>
+      <div class="showcase">
+        <div class="rec-list" id="featureGrid"></div>
+        <div class="device-wrap">
+          <div class="device">
+            <div class="device-screen">
+              <div class="ds-bar"><span class="ds-mark"><i></i>Slayter</span><span class="ds-av">JS</span></div>
+              <div class="ds-body">
+                <div class="ds-hi">Olá, Jesley!</div>
+                <div class="ds-tiles">
+                  <div><b>18</b><span>dias de sequência</span></div>
+                  <div><b>3/4</b><span>treinos na semana</span></div>
+                </div>
+                <div class="ds-card">
+                  <span class="ds-lbl">Seu treino de hoje</span>
+                  <b class="ds-title">Upper — volume e detalhe</b>
+                  <div class="ds-rows">
+                    <span><i>01</i>Desenvolvimento com halteres<em>4 × 8–12</em></span>
+                    <span><i>02</i>Elevação lateral<em>5 × 12–15</em></span>
+                    <span><i>03</i>Crucifixo inverso<em>4 × 15–20</em></span>
+                  </div>
+                  <span class="ds-btn">Começar treino</span>
+                </div>
+                <div class="ds-chart">
+                  <span class="ds-lbl">Frequência · 12 semanas</span>
+                  <div class="ds-bars"><i style="height:38%"></i><i style="height:56%"></i><i style="height:56%"></i><i style="height:38%"></i><i style="height:82%"></i><i style="height:56%"></i><i style="height:82%"></i><i style="height:82%"></i><i style="height:56%"></i><i style="height:82%"></i><i style="height:100%"></i><i style="height:56%"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANOS -->
+  <section class="sec sec-line" id="planos">
+    <div class="wrap">
+      <div class="sec-intro">
+        <div class="eyebrow">Escolha seu nível</div>
+        <h2 class="d2">Planos</h2>
+        <p class="lead">Três pontos de entrada na metodologia. Todas as condições comerciais são apresentadas antes da contratação.</p>
+      </div>
+      <div id="planHero"></div>
+      <div class="plans-sec" id="plansGrid"></div>
+      <div class="notice mt-l">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-alert"/></svg>
+        <div>As dicas alimentares da plataforma têm caráter educativo e <b>não substituem o acompanhamento individualizado de um nutricionista</b>. Os conteúdos de treinamento <b>não substituem avaliação profissional</b> quando ela for necessária. Em caso de dor, lesão, condição de saúde preexistente ou dúvida sobre sua aptidão para o exercício, procure um profissional de saúde antes de iniciar.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JORNADA -->
+  <section class="sec sec-line" id="jornada">
+    <div class="wrap">
+      <div class="sec-intro narrow">
+        <div class="eyebrow">Sequência da experiência</div>
+        <h2 class="d2">A jornada Slayter</h2>
+      </div>
+      <div class="journey" id="journeyGrid"></div>
+    </div>
+  </section>
+
+  <section class="closeband">
+    <img class="bg" src="img/gentileza.jpg" alt="" width="1440" height="617">
+    <div class="wrap">
+      <p class="statement">Comece hoje.<br>Evolua sempre.</p>
+      <button class="btn btn-primary btn-lg mt-m" data-act="comecar">Começar agora <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><use href="#i-arrow"/></svg></button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <div class="wordmark" style="margin-bottom:12px"><span class="slash" aria-hidden="true"></span>Slayter<i>Trainer</i></div>
+          <p class="tiny muted" style="max-width:34ch; margin:0">Plataforma de treinamento físico criada e idealizada por Jesley Slayter. Firmeza com os processos e gentileza com as pessoas.</p>
+        </div>
+        <div>
+          <h5>Plataforma</h5>
+          <ul><li><a href="#metodo">O Método</a></li><li><a href="#resultados">Resultados</a></li><li><a href="#planos">Planos</a></li><li><a href="#" data-act="entrar">Entrar</a></li></ul>
+        </div>
+        <div>
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="#" data-doc="termos">Termos de uso</a></li>
+            <li><a href="#" data-doc="privacidade">Política de privacidade</a></li>
+            <li><a href="#" data-doc="cancelamento">Política de cancelamento</a></li>
+            <li><a href="#" data-doc="lgpd">Tratamento de dados (LGPD)</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Contato</h5>
+          <ul><li><a href="#" data-doc="suporte">Suporte ao aluno</a></li><li><a href="#" data-doc="parcerias">Seja um parceiro</a></li></ul>
+        </div>
+      </div>
+      <div class="footer-legal">
+        <p style="margin:0">A plataforma não promete transformação física garantida nem resultados padronizados. Evolução depende de constância, contexto individual, saúde, sono, alimentação e histórico de treino. Os conteúdos têm caráter informativo e educativo e não substituem avaliação profissional quando ela for necessária.</p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- ══════════════ APLICATIVO ══════════════ -->
+<div id="app" hidden>
+  <div class="app">
+    <aside class="rail">
+      <div class="rail-head">
+        <div class="wordmark"><span class="slash" aria-hidden="true"></span>Slayter<i>Trainer</i></div>
+      </div>
+      <nav class="rail-nav" id="railNav"></nav>
+      <div class="rail-foot">
+        <button class="navitem" data-view="admin" id="adminLink">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><use href="#i-shield"/></svg>
+          Painel administrativo
+        </button>
+        <button class="userchip" data-view="perfil">
+          <span class="avatar accent jsp" id="railAvatar">JS</span>
+          <span class="meta"><b id="railName">Jesley Slayter</b><span id="railPlan">Premium</span></span>
+        </button>
+        <button class="navitem" data-act="sair">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><use href="#i-logout"/></svg>
+          Sair da conta
+        </button>
+      </div>
+    </aside>
+
+    <div class="main">
+      <div class="appbar">
+        <h1 id="viewTitle">Início</h1>
+        <div class="sp"></div>
+        <button class="xbtn" data-act="notificacoes" aria-label="Notificações" style="position:relative">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><use href="#i-bell"/></svg>
+          <span id="notifDot" style="position:absolute;top:5px;right:6px;width:6px;height:6px;border-radius:50%;background:var(--accent)"></span>
+        </button>
+        <button class="avatar accent jsp" data-view="perfil" id="barAvatar" style="width:30px;height:30px;font-size:.6875rem" aria-label="Meu perfil">JS</button>
+      </div>
+      <div class="view" id="viewRoot"></div>
+    </div>
+  </div>
+  <nav class="tabbar" id="tabBar"></nav>
+</div>
+
+<div id="modalRoot"></div>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+
+<script src="slayter-data.js"></script>
+<script src="slayter-app.js"></script>
+<script src="slayter-views.js"></script>
+<script src="slayter-online.js"></script>
+
+</body>
+</html>
